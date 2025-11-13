@@ -4,4 +4,6 @@ This is the starter template for the Next.js App Router Course. It contains the 
 
 For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
 
-# Deployment: https://nextjs-dashboard-virid-nine-pqhup3kig2.vercel.app/
+# Deployment
+
+https://nextjs-dashboard-virid-nine-pqhup3kig2.vercel.app/
