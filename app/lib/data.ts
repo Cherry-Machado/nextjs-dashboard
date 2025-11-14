@@ -1,4 +1,4 @@
-import { unstable_noStore as noStore } from 'next/cache';
+//import { unstable_noStore as noStore } from 'next/cache';
 import postgres from 'postgres';
 import {
   CustomerField,
@@ -13,7 +13,7 @@ import { formatCurrency } from './utils';
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
 export async function fetchRevenue() {
-  noStore();
+  //noStore();
   try {
     // Artificially delay a response for demo purposes.
     // Don't do this in production :)
