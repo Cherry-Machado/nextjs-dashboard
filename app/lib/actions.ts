@@ -59,3 +59,8 @@ export async function createInvoice(formData: FormData) {
   // Test it out:
   //console.log(rawFormData);
 }
+
+export async function deleteInvoice(id: string) {
+  await sql`DELETE FROM invoices WHERE id = ${id}`;
+  revalidatePath('/dashboard/invoices');
+}
