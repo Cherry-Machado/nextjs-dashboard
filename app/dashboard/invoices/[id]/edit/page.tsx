@@ -10,7 +10,7 @@ export const metadata: Metadata = {
  
 //export default async function Page() {
 export default async function Page({ params }: { params: { id: string } }) {
-  const id = params.id;
+  const {id} = await params;
   const [invoice, customers] = await Promise.all([
     fetchInvoiceById(id),
     fetchCustomers(),
